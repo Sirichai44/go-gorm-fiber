@@ -1,0 +1,6 @@
+
+//post method
+curl -X POST http://localhost:8080/books -H 'Content-Type: application/json' -d '{"name":"nobook", "price":400, "author":"testname", "description":"test"}'
+
+//put method
+curl -X PUT http://localhost:8080/books/2 -H 'Content-Type: application/json' -d '{"name":"J.K. Rowlingt"}'
