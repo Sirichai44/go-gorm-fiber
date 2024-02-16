@@ -1,20 +1,20 @@
 CRUD with gorm and fiber
 -
-- Start with
+start with
   - 
-    ```
+  ```
     docker-compose up -d
     go run .
-    ```   
-- postgres
+  ```   
+postgres
   - 
-    ```
+  ```
     http://localhost:5050
-    ```
-- fiber --> auth --> middleware
-   -
-   - register
-    ```
+  ```
+fiber --> auth --> middleware
+  -
+  - register
+```
   http://localhost:8080/register
   //method POST
     //example 
@@ -22,9 +22,9 @@ CRUD with gorm and fiber
       "email": "test@mail.com"
       "password": "1234"
     }
+```
+  - login
   ```
-   - login
-   ```
    //method POST
    http://localhost:8080/login
      //example 
@@ -33,8 +33,8 @@ CRUD with gorm and fiber
       "password": "1234"
     }
   ```
-   - create book
-   ```
+  - create book
+  ```
    //method POST
    http://localhost:8080/books
      //example 
@@ -45,8 +45,8 @@ CRUD with gorm and fiber
     "price": 100
    }
   ```
-  - update book
-   ```
+- update book
+ ```
    //method PUT
    http://localhost:8080/books:id
      //example 
@@ -57,9 +57,9 @@ CRUD with gorm and fiber
     "price": 100
    }
   ```
-  - delete book
-   ```
+- delete book
+```
    //method DELETE
    http://localhost:8080/books:id
-  ```
+```
 
